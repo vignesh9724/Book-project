@@ -34,5 +34,5 @@ popupAddBtn.addEventListener("click",function(event){
 })
 
 function deletebook(event){
-    event.target.parentElement.remove()
+    event.target.closest(".book-container").remove()
 }
