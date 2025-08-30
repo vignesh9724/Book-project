@@ -27,7 +27,7 @@ popupAddBtn.addEventListener("click",function(event){
     div.innerHTML=`<h2>${booktitle.value}</h2><br>
             <h5>${bookauthor.value}</h5><br>
             <p>${aboutthebook.value}</p><br>
-            <button><b>Delete</b></button>`
+            <button onclick="deletebook(event)"><b>Delete</b></button>`
             container.append(div)
             popupoverlay.style.display="none"
             popupbox.style.display="none"
