@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookspark</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="navbar">
+        <h1> Bookspark </h1>
+    </div><br>
+    <div class="Container">
+        <div class="book-container">
+            <h2>Ponniyin Selvan</h2><br>
+            <h5>Kalki</h5><br>
+            <p>"Ponniyin Selvan" refers to the Tamil historical novel series by Kalki Krishnamurthy, 
+                chronicling the life of Prince Arulmozhivarman (later Rajaraja Chola I) 
+                and the glory of the Chola dynasty. There is no specific reference to a "navel" in the common 
+                summaries or discussions of the novel; 
+                rather, "Ponniyin Selvan" translates to "The Son of Ponni". </p><br>
+            <button onclick="deletebook(event)"><b>Delete</b></button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popupbox">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input"><br>
+            <input type="text" placeholder="Book Author " id="book-author-input"><br>
+            <textarea placeholder="About The Book !!!" id="book-description"></textarea>
+            <button id="addbook">Add</button>
+            <button id="cancelbook">Cancel</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js">
+    </script>
+</body>
+</html>
